@@ -32,28 +32,15 @@ int removeZero(int number) {
 
 int main()
 {
-	int n1, n2; 
-	cin >> n1 >> n2; 
-
-	int res = n1 + n2; 
-
-	int rZero1 = removeZero(n1);
-	int rZero2 = removeZero(n2);
-	int rZerores = removeZero(res);
-
-	int res2 = rZero1 + rZero2;
-
-	if (rZerores == res2) 
-	{
-		cout << "YES" << endl;
+	string value;
+	int flag = 0;
+	while (cin >> value) { // I love you
+		reverse(value.begin(), value.end()); // I  evol uoy
+		if (flag) { // 1
+			cout << " ";
+		}
+		flag = 1;
+		cout << value;  // I
 	}
-	else
-	{
-		cout << "NO" << endl;
-
-	}
-
-
-
 
 }
