@@ -4,43 +4,55 @@
 #include <algorithm>
 //#include <cassert>
 //#include<stack>
+#include<queue>
 #include <cmath>
 #include<vector>
-
+#define ll long long
 using namespace std;
 
-int removeZero(int number) {
-
-	int ans = 0 , ten = 1; 
-
-	while (number > 0 )
-	{
-		int res = number % 10; 
-		number /= 10;
-
-		if (res != 0) 
-		{
-			ans += res * ten; 
-			ten *= 10; 
-		}
-	}
-
-	return ans; 
-
+void fast()
+{
+    cin.sync_with_stdio(0);
+    cin.tie(0);
 }
+
 
 
 int main()
 {
-	string value;
-	int flag = 0;
-	while (cin >> value) { // I love you
-		reverse(value.begin(), value.end()); // I  evol uoy
-		if (flag) { // 1
-			cout << " ";
-		}
-		flag = 1;
-		cout << value;  // I
-	}
+    //fast();
+
+
+    int m;
+    cin >> m;
+
+   /* queue<int> qu;
+
+
+    while (s--) {
+        int op, num;
+        cin >> op, num;
+
+        if (op == 1) {
+            qu.push(num);
+        }
+        else {
+            if (qu.front() == num) {
+                cout << "YES" << endl;
+            }
+            else {
+                cout << "NO" << endl;
+            }
+
+
+            qu.pop();
+        }*/
+
+
+
+    }
+
+
+
 
 }
